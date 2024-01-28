@@ -1,0 +1,41 @@
+/* The html style removes the pre-set margin, and stretches the page to all available space */
+html {
+  min-height: 100%;
+  margin: 0;
+}
+
+/* Basic stuff like font and color */
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Containers */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 200px auto;
+  height: 90vh;
+  width: 85vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+#sideBar {
+  display: flex;
+}
+
+/* #mainContainer {
+
+} */
