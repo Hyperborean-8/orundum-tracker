@@ -22,9 +22,15 @@ body {
 /* Containers */
 .content-wrapper {
   display: grid;
-  grid-template-columns: 200px auto;
   height: 90vh;
   width: 85vw;
+
+  grid-template-rows: 50px auto;
+  grid-template-columns: 300px auto;
+
+  grid-template-areas:
+  "topLabel topLabel"
+  "sidebar mainContainer"
 }
 
 .flex {
@@ -32,8 +38,20 @@ body {
   flex-direction: column;
 }
 
+#mainContainer {
+  grid-area: mainContainer;
+}
+
 #sideBar {
+  grid-area: sidebar;
+
   display: flex;
+  flex-direction: column;
+}
+
+/* Elements */
+#topLabel {
+  grid-area: topLabel;
 }
 
 /* #mainContainer {
