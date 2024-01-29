@@ -5,7 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel serve src/index.html",
-    "build": "cross-env NODE_ENV=production parcel build src/index.html --dist-dir ./dist",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --dist-dir ./dist --public-url /orundum-tracker/",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {

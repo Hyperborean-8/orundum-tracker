@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orundum Tracker</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="content-wrapper">
@@ -27,6 +27,7 @@
               type="number"
               step="600"
               size="5"
+              (input)="handleInputChange()
             />
             <button
               onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
@@ -74,9 +75,10 @@
               id="originiumInput"
               min="0"
               name="quantity"
-              value="1"
+              value="0"
               type="number"
               size="5"
+              onChange="handleInputChange()"
             />
             <button
               onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
@@ -87,7 +89,12 @@
           </div>
         </div>
       </div>
-      <div id="mainContainer"></div>
+      <div id="mainContainer">
+        <div>You have 0 pulls</div>
+      </div>
+      
     </div>
+
+    <script src="main.ts"></script>
   </body>
 </html>
