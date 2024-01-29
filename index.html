@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orundum Tracker</title>
+    <link href="/style.e308ff8e.css" rel="stylesheet">
+  <script src="/style.e308ff8e.js"></script></head>
+  <body>
+    <div class="content-wrapper">
+      <div id="topLabel">Originium Tracker</div>
+      <div id="sideBar">
+        <div class="flex">
+          <label for="orundumInput">Orundum</label>
+          <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+              -
+            </button>
+            <input id="orundumInput" min="0" name="quantity" value="0" type="number" step="600" size="5">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="flex">
+          <label for="permitInput">Permit</label>
+          <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+              -
+            </button>
+            <input id="permitInput" min="0" name="quantity" value="0" type="number" size="5">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="flex">
+          <label for="originiumInput">Originium</label>
+          <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+              -
+            </button>
+            <input id="originiumInput" min="0" name="quantity" value="1" type="number" size="5">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mainContainer"></div>
+    </div>
+  </body>
+</html>
