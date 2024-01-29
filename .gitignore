@@ -1,0 +1,35 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore .env files
+.env
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+/.idea/
+/*.iml
+/*.iws
+/*.sublime-workspace
+
+# Ignore OSX specific files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore build files
+/dist
+/coverage
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore parcel
+.parcel-cache
