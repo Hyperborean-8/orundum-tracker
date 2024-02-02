@@ -13,86 +13,31 @@
         <div class="flex">
           <label for="orundumInput">Orundum</label>
           <div class="number-input">
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-              class="minus"
-            >
-              -
-            </button>
-            <input
-              id="orundumInput"
-              min="0"
-              name="quantity"
-              value="0"
-              type="number"
-              step="600"
-              size="5"
-              (input)="handleInputChange()
-            />
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-              class="plus"
-            >
-              +
-            </button>
+            <button onclick="stepDown()" class="minus">-</button>
+            <input id="orundumInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()" />
+            <button onclick="stepUp()" class="plus">+</button>
           </div>
         </div>
         <div class="flex">
           <label for="permitInput">Permit</label>
           <div class="number-input">
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-              class="minus"
-            >
-              -
-            </button>
-            <input
-              id="permitInput"
-              min="0"
-              name="quantity"
-              value="0"
-              type="number"
-              size="5"
-            />
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-              class="plus"
-            >
-              +
-            </button>
+            <button onclick="stepDown()" class="minus">-</button>
+            <input id="permitInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()"/>
+            <button onclick="stepUp()" class="plus">+</button>
           </div>
         </div>
         <div class="flex">
           <label for="originiumInput">Originium</label>
           <div class="number-input">
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-              class="minus"
-            >
-              -
-            </button>
-            <input
-              id="originiumInput"
-              min="0"
-              name="quantity"
-              value="0"
-              type="number"
-              size="5"
-              onChange="handleInputChange()"
-            />
-            <button
-              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-              class="plus"
-            >
-              +
-            </button>
+            <button onclick="stepDown()" class="minus">-</button>
+            <input id="originiumInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()"/>
+            <button onclick="stepUp()" class="plus">+</button>
           </div>
         </div>
       </div>
       <div id="mainContainer">
         <div>You have 0 pulls</div>
       </div>
-      
     </div>
 
     <script src="main.ts"></script>
