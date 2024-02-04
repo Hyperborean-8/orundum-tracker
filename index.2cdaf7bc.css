@@ -1,0 +1,113 @@
+html {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #141414;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  display: flex;
+}
+
+.content-wrapper {
+  grid-template: "topLabel topLabel" 50px
+                 "sidebar mainContainer"
+                 / 200px auto;
+  width: 60vw;
+  height: 90vh;
+  display: grid;
+}
+
+.flex {
+  flex-direction: column;
+  gap: 5px;
+  display: flex;
+}
+
+#mainContainer {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 20px;
+  grid-area: mainContainer;
+  margin: 20px;
+  padding: 20px;
+}
+
+#sideBar {
+  flex-direction: column;
+  grid-area: sidebar;
+  gap: 10px;
+  width: auto;
+  margin: 20px 6px 6px;
+  display: flex;
+}
+
+.number-input {
+  grid-template-columns: 35px auto 35px;
+  gap: 5px;
+  height: 35px;
+  display: grid;
+}
+
+input[type="number"] {
+  color: #e6e6e6;
+  appearance: textfield;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  justify-self: stretch;
+  padding-left: 8px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #668fff;
+}
+
+button {
+  color: #e6e6e6;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  transition: background-color .3s;
+}
+
+button:hover {
+  background-color: #2e2e2e;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #668fff;
+}
+
+button:active {
+  background-color: #474747;
+  transition: none;
+}
+
+.minus, .plus {
+  width: 35px;
+}
+
+#topLabel {
+  text-align: center;
+  grid-area: topLabel;
+  align-self: center;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
