@@ -4,39 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orundum Tracker</title>
-    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="content-wrapper">
-      <div id="topLabel">Originium Tracker</div>
+      <div id="topLabel">Orundum Tracker</div>
       <div id="sideBar">
         <div class="flex">
           <label for="orundumInput">Orundum</label>
           <div class="number-input">
-            <button onclick="stepDown()" class="minus">-</button>
-            <input id="orundumInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()" />
-            <button onclick="stepUp()" class="plus">+</button>
+            <button onclick="stepDownOrundum()" class="minus">-</button>
+            <input id="orundumInput" value="0" min="0" name="quantity" type="number" size="5" oninput="handleInputChange()" />
+            <button onclick="stepUpOrundum()" class="plus">+</button>
           </div>
         </div>
         <div class="flex">
           <label for="permitInput">Permit</label>
           <div class="number-input">
-            <button onclick="stepDown()" class="minus">-</button>
-            <input id="permitInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()"/>
-            <button onclick="stepUp()" class="plus">+</button>
+            <button onclick="stepDownPermit()" class="minus">-</button>
+            <input id="permitInput" value="0" min="0" name="quantity" type="number" size="5" oninput="handleInputChange()" />
+            <button onclick="stepUpPermit()" class="plus">+</button>
           </div>
         </div>
         <div class="flex">
           <label for="originiumInput">Originium</label>
           <div class="number-input">
-            <button onclick="stepDown()" class="minus">-</button>
-            <input id="originiumInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()"/>
-            <button onclick="stepUp()" class="plus">+</button>
+            <button onclick="stepDownOriginium()" class="minus">-</button>
+            <input id="originiumInput" min="0" name="quantity" value="0" type="number" size="5" oninput="handleInputChange()" />
+            <button onclick="stepUpOriginium()" class="plus">+</button>
           </div>
         </div>
       </div>
       <div id="mainContainer">
-        <div>You have 0 pulls</div>
+        <span id="pullsCountLabel">You have 0 pulls</span><br>
+        <span id="pullsPercentLabel">That's 0% of the required 300 pulls to get a guaranteed limited operator.</span>
+        <div id="pullsBar" class="progress" role="progressbar" aria-label="Pulls bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div id="pullsBarProgress" class="progress-bar progress-bar-striped" style="width: 0%"></div>
+        </div>
       </div>
     </div>
 

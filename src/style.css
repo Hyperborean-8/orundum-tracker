@@ -23,7 +23,7 @@ body {
 .content-wrapper {
   display: grid;
   height: 90vh;
-  width: 85vw;
+  width: 60vw;
 
   grid-template-rows: 50px auto;
   grid-template-columns: 200px auto;
