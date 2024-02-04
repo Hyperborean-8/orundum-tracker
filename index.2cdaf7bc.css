@@ -20,7 +20,7 @@ body {
   grid-template: "topLabel topLabel" 50px
                  "sidebar mainContainer"
                  / 200px auto;
-  width: 85vw;
+  width: 60vw;
   height: 90vh;
   display: grid;
 }
